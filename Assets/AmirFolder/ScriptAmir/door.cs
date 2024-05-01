@@ -5,7 +5,7 @@ using TMPro;
 public class door : MonoBehaviour
 {
     public TextMeshPro clock;
-    private int time = 10;
+    private int time = 15;
 
     private void Awake()
      {
