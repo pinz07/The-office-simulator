@@ -21,7 +21,7 @@ public void Could()
   Destroy(error);
   GetComponent<Player>().enabled = true;
   GetComponent<Camera>().enabled = true;
-  GetComponentInChildren<aperator>().enabled = true;
+  GetComponentInChildren<LogicManager>().enabled = true;
  }
 private void OnTriggerEnter(Collider other)
     {
@@ -33,7 +33,7 @@ private void OnTriggerEnter(Collider other)
         error.active = true;
         GetComponent<Player>().enabled = false;
         GetComponent<Camera>().enabled = false;
-        GetComponentInChildren<aperator>().enabled = false;                  
+        GetComponentInChildren<LogicManager>().enabled = false;                  
        }
     }
 }
