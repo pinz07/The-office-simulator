@@ -10,18 +10,18 @@ public GameObject triggerError;
 
 public void Start()
 {
-    error.active = false;
+    error.active = true;
     Screen.fullScreen = true;    
 }
 public void Could()
  {
   Cursor.lockState = CursorLockMode.Confined;
-  Cursor.visible = false;      
+  Cursor.visible = true;      
   Destroy(triggerError);  
   Destroy(error);
-  GetComponent<Jump>().enabled = true;
-  GetComponent<Crouch>().enabled = true;
-  GetComponentInChildren<FirstPersonMovement>().enabled = true;
+  GetComponent<Player>().enabled = true;
+  GetComponent<Camera>().enabled = true;
+  GetComponentInChildren<aperator>().enabled = true;
  }
 private void OnTriggerEnter(Collider other)
     {
@@ -31,9 +31,9 @@ private void OnTriggerEnter(Collider other)
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;      
         error.active = true;
-        GetComponent<Jump>().enabled = false;
-        GetComponent<Crouch>().enabled = false;
-        GetComponentInChildren<FirstPersonMovement>().enabled = false; 
+        GetComponent<Player>().enabled = false;
+        GetComponent<Camera>().enabled = false;
+        GetComponentInChildren<aperator>().enabled = false;                  
        }
     }
 }
