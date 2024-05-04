@@ -19,21 +19,21 @@ public void Could()
   Cursor.visible = false;      
   Destroy(triggerError);  
   Destroy(error);
-  GetComponent<Player>().enabled = true;
-  GetComponent<Camera>().enabled = true;
-  GetComponentInChildren<aperator>().enabled = true;
+  GetComponent<Jump>().enabled = true;
+  GetComponent<Crouch>().enabled = true;
+  GetComponentInChildren<FirstPersonMovement>().enabled = true;
  }
 private void OnTriggerEnter(Collider other)
     {
-       if(this.CompareTag("Error") && other.CompareTag("Player"))
+       if(this.CompareTag("Player") && other.CompareTag("Error"))
        {        
         Screen.fullScreen = false;
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;      
         error.active = true;
-        GetComponent<Player>().enabled = false;
-        GetComponent<Camera>().enabled = false;
-        GetComponentInChildren<aperator>().enabled = false;                  
+        GetComponent<Jump>().enabled = false;
+        GetComponent<Crouch>().enabled = false;
+        GetComponentInChildren<FirstPersonMovement>().enabled = false; 
        }
     }
 }
