@@ -7,6 +7,8 @@ TagManager:
   - Error
   - HS
   - Zone
+  - SWEP
+  - Garbage
   layers:
   - Default
   - TransparentFX
