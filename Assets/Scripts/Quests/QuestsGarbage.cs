@@ -8,6 +8,7 @@ public class QuestsGarbage : MonoBehaviour
     [SerializeField] private QuestsMain QuestsM;
     [SerializeField] private bool ThisQuestComplete = false;
     [SerializeField] private bool RewardGet = false;
+    [SerializeField] PlayerStat PS;
     [Header("GarbageQuest")]
     [SerializeField] private int GarbageAmountNeed = 2;
     [SerializeField] private int CurrentGarbageCollect = 0;
@@ -16,6 +17,13 @@ public class QuestsGarbage : MonoBehaviour
     [SerializeField] LayerMask interactLayer;
     [SerializeField] GameObject GarbageChute;
 
+
+    private void Start()
+    {
+        PS = GetComponentInParent<PlayerStat>();
+        if (PS == null)
+            Debug.LogError("PlayerStat not found");
+    }
     void Update()
     {
         if (!AllGarbageCollected)
@@ -83,6 +91,7 @@ public class QuestsGarbage : MonoBehaviour
                 Debug.Log("Press 'E' to interact with Garbage Chute");
                 if (Input.GetKeyDown(KeyCode.E))
                 {
+                    PS.PlayerDo = false;
                     ThisQuestComplete = true;
                     GetRewardForQuest();
                     Destroy(gameObject);

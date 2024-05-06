@@ -8,6 +8,14 @@ public class SWEPPickUp : MonoBehaviour
     [SerializeField] LayerMask interactLayer;
     [SerializeField] private bool PlayerPickUpSWEP = false;
     [SerializeField] private PlayerAudioScript PlayerAudio;
+    [SerializeField] private PlayerStat PS;
+
+    private void Start()
+    {
+        PS = GetComponentInParent<PlayerStat>();
+        if (PS == null)
+            Debug.LogError("PlayerStat not found");
+    }
 
     private void Update()
     {
@@ -17,10 +25,11 @@ public class SWEPPickUp : MonoBehaviour
             if (hit.collider.CompareTag("SWEP"))
             {
                 Debug.Log("Press 'E' to interact");
-                if (Input.GetKeyDown(KeyCode.E))
+                if (Input.GetKeyDown(KeyCode.E) && !PS.PlayerDo)
                 {
                     hit.collider.gameObject.GetComponent<PickAbleObject>().PickUpSWEP();
                     PlayerAudio.PickUpAudioPlay();
+                    PS.PlayerDo = true;
                 }
             }
         }
