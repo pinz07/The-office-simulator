@@ -2,23 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SettingsMenu : MonoBehaviour
 {
+    
     public GameObject MainMenu;
     public GameObject Settings;
 
     public void SettingsOpening()
     {
-        MainMenu.SetActive(false);
-        Settings.SetActive(true);
+        SceneManager.LoadScene(2);
     }
 
     public void SettingsClosing()
     {
-        Settings.SetActive(false);
-        MainMenu.SetActive(true);
+        SceneManager.LoadScene(3);
+        
     }
-
+    
     
 }
