@@ -6,15 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/HideAndSeek.unity
-    guid: 0bc20476457919f4eb758dfd183ef209
+    path: Assets/Scenes/Menu/Main Menu.unity
+    guid: f09afdc23bcc7614a836633ce024edb9
   - enabled: 1
-    path: Assets/Scenes/Day2(Amir).unity
-    guid: 7e668da57462bb849a72e1f7a0303f9b
-  - enabled: 1
-    path: Assets/Scripts/From Menu to Game/Screens/Settings.unity
+    path: Assets/Scenes/Menu/Settings.unity
     guid: b5bf53b00eab94540b7df8c0b601920d
   - enabled: 1
-    path: Assets/Scripts/From Menu to Game/Screens/Main Menu.unity
-    guid: f09afdc23bcc7614a836633ce024edb9
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

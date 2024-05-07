@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6739844532836837485}
+  - component: {fileID: 2009116382021706618}
   m_Layer: 0
   m_Name: PlayerWateringCan
   m_TagString: SWEP
@@ -32,6 +33,31 @@ Transform:
   - {fileID: 4440871377466954474}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2009116382021706618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133647015793339544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d1b576754d955428ff44bc57f9e1f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  QuestsM: {fileID: 0}
+  ThisQuestComplete: 0
+  RewardGet: 0
+  PS: {fileID: 0}
+  Score: 0
+  WaterCan: {fileID: 0}
+  Distance: 2
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 1
+  WaterAmountNeed: 3
+  CurrentWaterCollect: 0
+  AllWaterCollected: 0
 --- !u!1 &1910850558652262255
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,7 +69,6 @@ GameObject:
   - component: {fileID: 4440871377466954474}
   - component: {fileID: 866432621369366864}
   - component: {fileID: 6789825356773760607}
-  - component: {fileID: 2320703177480738033}
   m_Layer: 0
   m_Name: Cube.001
   m_TagString: Untagged
@@ -116,25 +141,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2320703177480738033
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1910850558652262255}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 158f788eeb1973d45933b060a20c6a8b, type: 3}

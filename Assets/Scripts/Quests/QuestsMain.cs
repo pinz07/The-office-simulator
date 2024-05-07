@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /*Commentarii ya bydy pisat translitob ibo github ih lomaet esli oni na kirrilice.
   Script Questmain eto baza dlya vsey quest system.
@@ -48,5 +49,8 @@ public class QuestsMain : MonoBehaviour
     {
         /*Logic for openElevator*/
         Debug.Log("All quests complete. Lifts Door opened. Player can leave the level.");
+        //BUILD//
+        SceneManager.LoadScene(0);
+        //BUILD//
     }
 }

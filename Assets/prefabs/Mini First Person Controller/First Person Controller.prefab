@@ -348,7 +348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceThreshold: 0.15
-  isGrounded: 1
+  isGrounded: 0
 --- !u!1 &1593727746557118
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,7 +586,7 @@ MonoBehaviour:
   Distance: 2
   interactLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   PlayerPickUpSWEP: 0
   PlayerAudio: {fileID: 8684682789028529145}
   PS: {fileID: 0}
@@ -2592,6 +2592,10 @@ PrefabInstance:
     - target: {fileID: 133647015793339544, guid: 40f93898355890e4e99872cdf35aa40d, type: 3}
       propertyPath: m_Name
       value: PlayerWateringCan
+      objectReference: {fileID: 0}
+    - target: {fileID: 133647015793339544, guid: 40f93898355890e4e99872cdf35aa40d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6739844532836837485, guid: 40f93898355890e4e99872cdf35aa40d, type: 3}
       propertyPath: m_LocalPosition.x
