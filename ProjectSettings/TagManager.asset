@@ -9,6 +9,7 @@ TagManager:
   - Zone
   - SWEP
   - Garbage
+  - TriggerWaterCan
   layers:
   - Default
   - TransparentFX

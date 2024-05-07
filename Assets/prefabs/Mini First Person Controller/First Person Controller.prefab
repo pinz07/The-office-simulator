@@ -1178,6 +1178,7 @@ MonoBehaviour:
   QuestsM: {fileID: 8546374651937711908}
   ThisQuestComplete: 0
   RewardGet: 0
+  PS: {fileID: 0}
   Sandwich: {fileID: 5410670903228420642}
   Water: {fileID: 8437855822945368026}
   SandwichEated: 0
@@ -1389,6 +1390,7 @@ Transform:
   m_Children:
   - {fileID: 4592449189156602710}
   - {fileID: 5905560323027500988}
+  - {fileID: 4963984590418214246}
   m_Father: {fileID: 4490257326247362}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4964284723692651118
@@ -2578,6 +2580,68 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8412689802398369805, guid: e12e108602a01684caa299f303f8d223, type: 3}
   m_PrefabInstance: {fileID: 118969253484249047}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1831594283547415819
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7571928127564708538}
+    m_Modifications:
+    - target: {fileID: 133647015793339544, guid: 40f93898355890e4e99872cdf35aa40d, type: 3}
+      propertyPath: m_Name
+      value: PlayerWateringCan
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739844532836837485, guid: 40f93898355890e4e99872cdf35aa40d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.363
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739844532836837485, guid: 40f93898355890e4e99872cdf35aa40d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739844532836837485, guid: 40f93898355890e4e99872cdf35aa40d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.672
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739844532836837485, guid: 40f93898355890e4e99872cdf35aa40d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739844532836837485, guid: 40f93898355890e4e99872cdf35aa40d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739844532836837485, guid: 40f93898355890e4e99872cdf35aa40d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739844532836837485, guid: 40f93898355890e4e99872cdf35aa40d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739844532836837485, guid: 40f93898355890e4e99872cdf35aa40d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739844532836837485, guid: 40f93898355890e4e99872cdf35aa40d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739844532836837485, guid: 40f93898355890e4e99872cdf35aa40d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f93898355890e4e99872cdf35aa40d, type: 3}
+--- !u!4 &4963984590418214246 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6739844532836837485, guid: 40f93898355890e4e99872cdf35aa40d, type: 3}
+  m_PrefabInstance: {fileID: 1831594283547415819}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3991685222844791901
 PrefabInstance:
