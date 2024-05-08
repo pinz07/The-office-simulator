@@ -29,22 +29,16 @@ public class QuestsWaterThePlant : MonoBehaviour
     void Update()
     {
         CollectTrash();
-        GetRewardForQuest();
         if (Score > 2)
         {
             ThisQuestComplete = true;
-            GetRewardForQuest();
+            if(!RewardGet)
+            {
+                QuestsM.QuestComplete();
+                RewardGet = true;
+            }
             PS.PlayerDo = false;
             Destroy(gameObject);
-        }
-    }
-
-    private void GetRewardForQuest()
-    {
-        if (ThisQuestComplete && !RewardGet)
-        {
-            QuestsM.CurrentQuestsComplete++;
-            RewardGet = true;
         }
     }
 

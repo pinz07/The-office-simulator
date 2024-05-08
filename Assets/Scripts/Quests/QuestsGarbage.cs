@@ -33,7 +33,7 @@ public class QuestsGarbage : MonoBehaviour
 
     }
 
-    private void GetRewardForQuest()
+    /*private void GetRewardForQuest()
     {
         if (ThisQuestComplete && !RewardGet)
         {
@@ -41,6 +41,7 @@ public class QuestsGarbage : MonoBehaviour
             RewardGet = true;
         }
     }
+    */
 
     private void CollectTrash()
     {
@@ -93,7 +94,7 @@ public class QuestsGarbage : MonoBehaviour
                 {
                     PS.PlayerDo = false;
                     ThisQuestComplete = true;
-                    GetRewardForQuest();
+                    QuestsM.QuestComplete();
                     Destroy(gameObject);
                 }
             }

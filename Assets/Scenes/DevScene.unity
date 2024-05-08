@@ -214,6 +214,14 @@ PrefabInstance:
       propertyPath: interactLayer.m_Bits
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6792150154933825671, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.488
+      objectReference: {fileID: 0}
+    - target: {fileID: 7252540777858652803, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: field of view
+      value: 70
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -258,7 +266,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.17699999, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1.6573}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1382891277}
@@ -1903,7 +1911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1225119630209416216, guid: b9b9cf46b4a3cb24fb4b601ade295731, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.531
+      value: 1.427
       objectReference: {fileID: 0}
     - target: {fileID: 1225119630209416216, guid: b9b9cf46b4a3cb24fb4b601ade295731, type: 3}
       propertyPath: m_LocalPosition.z

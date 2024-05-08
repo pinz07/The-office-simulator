@@ -32,8 +32,7 @@ public class QuestsEatFood : MonoBehaviour
 
         if(SandwichEated && WaterDrinked)
         {
-            ThisQuestComplete = true;
-            GetRewardForQuest();
+            QuestsM.QuestComplete();
             PS.PlayerDo = false;
             Destroy(gameObject);
         }
@@ -58,15 +57,6 @@ public class QuestsEatFood : MonoBehaviour
             EatSFX.Play();
             Destroy(Water);
             WaterDrinked = true;
-        }
-    }
-
-    private void GetRewardForQuest()
-    {
-        if (ThisQuestComplete && !RewardGet)
-        {
-            QuestsM.CurrentQuestsComplete++;
-            RewardGet = true;
         }
     }
 }
