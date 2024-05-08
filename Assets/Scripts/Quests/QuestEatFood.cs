@@ -15,11 +15,13 @@ public class QuestsEatFood : MonoBehaviour
     [SerializeField] private GameObject Water;
     [SerializeField] bool SandwichEated = false;
     [SerializeField] bool WaterDrinked = false;
+    [SerializeField] private AudioSource EatSFX;
     void Start()
     {
         PS = GetComponentInParent<PlayerStat>();
         if (PS == null)
             Debug.LogError("PlayerStat not found");
+        EatSFX = GetComponent<AudioSource>();
     }
 
 
@@ -42,6 +44,7 @@ public class QuestsEatFood : MonoBehaviour
         if(Input.GetMouseButton(1))
         {
             Debug.Log("Am am am");
+            EatSFX.Play();
             Destroy(Sandwich);
             SandwichEated =true;
         }
@@ -52,6 +55,7 @@ public class QuestsEatFood : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             Debug.Log("Glp glp glp");
+            EatSFX.Play();
             Destroy(Water);
             WaterDrinked = true;
         }
