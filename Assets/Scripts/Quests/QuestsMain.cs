@@ -35,6 +35,11 @@ public class QuestsMain : MonoBehaviour
         Debug.Log("LevelStarted");
     }
 
+    public void QuestComplete()
+    {
+        CurrentQuestsComplete++;
+    }
+
     private void QuestsCompleteCheck()
     {
         if(!LevelComplete && CurrentQuestsComplete ==  QuestsCount)
