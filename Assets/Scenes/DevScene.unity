@@ -1789,6 +1789,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lift
       objectReference: {fileID: 0}
+    - target: {fileID: 8159361182016895236, guid: 67bf1bf883d87fb42a0c5bd7e104025c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.633
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
