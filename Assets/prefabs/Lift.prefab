@@ -509,8 +509,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1192ef1eff4c0b848b316cdd665aacb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FirstDoor: {fileID: 4250984528109520757}
-  SecondDoor: {fileID: 8159361182016895236}
+  LeftDoor: {fileID: 4250984528109520757}
+  RightDoor: {fileID: 8159361182016895236}
 --- !u!1 &5824272843708624061
 GameObject:
   m_ObjectHideFlags: 0

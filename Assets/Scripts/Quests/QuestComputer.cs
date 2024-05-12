@@ -8,6 +8,7 @@ public class QuestsComputer : MonoBehaviour
     [Header("Quest Core")]
     [SerializeField] private QuestsMain QuestsM;
     [SerializeField] private bool RewardGet = false;
+    [SerializeField] Antivirus AntivirusFunc;
     void Start()
     {
 
@@ -16,7 +17,14 @@ public class QuestsComputer : MonoBehaviour
 
     void Update()
     {
-
+        if(AntivirusFunc.QuestComplete)
+        {
+            if(!RewardGet)
+            {
+                QuestsM.QuestComplete();
+                RewardGet = true;
+            }
+        }
     }
 
 }
