@@ -15,6 +15,7 @@ public class Antivirus : MonoBehaviour
     [SerializeField] private int Viruses = 0;
     private bool isCoroutineRunning = false;
     [SerializeField] public bool QuestComplete = false;
+    [SerializeField] private GameObject ButtonStartVirus;
     void Start()
     {
         
@@ -35,6 +36,7 @@ public class Antivirus : MonoBehaviour
     public void StartFindViruses()
     {
         StartCoroutine(VirusFindProgress());
+        Destroy(ButtonStartVirus);
     }
 
     IEnumerator VirusFindProgress()

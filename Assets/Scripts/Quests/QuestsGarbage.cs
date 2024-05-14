@@ -72,7 +72,7 @@ public class QuestsGarbage : MonoBehaviour
     private void GargabeCollectCheck()
     {
         if (CurrentGarbageCollect == GarbageAmountNeed)
-            AllGarbageCollected = true;
+            AllGarbageCollected = true;    
     }
 
     private void CleanGarbage()

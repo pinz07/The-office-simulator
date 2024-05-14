@@ -29,7 +29,7 @@ public class QuestsWaterThePlant : MonoBehaviour
     void Update()
     {
         CollectTrash();
-        if (Score > 2)
+        if (Score > 4)
         {
             ThisQuestComplete = true;
             if(!RewardGet)
