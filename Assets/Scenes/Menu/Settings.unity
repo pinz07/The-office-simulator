@@ -233,6 +233,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1289062124}
     m_Modifications:
+    - target: {fileID: 74540902564366329, guid: b9bf28f62d3b3b94db78ca2c77b41fcd, type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
+      value: 0.2901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 74540902564366329, guid: b9bf28f62d3b3b94db78ca2c77b41fcd, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 74540902564366329, guid: b9bf28f62d3b3b94db78ca2c77b41fcd, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 74540902564366329, guid: b9bf28f62d3b3b94db78ca2c77b41fcd, type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4620777657956697090, guid: b9bf28f62d3b3b94db78ca2c77b41fcd, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -321,6 +337,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1710998822}
+    - target: {fileID: 9097472358933953492, guid: b9bf28f62d3b3b94db78ca2c77b41fcd, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9097472358933953492, guid: b9bf28f62d3b3b94db78ca2c77b41fcd, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9097472358933953492, guid: b9bf28f62d3b3b94db78ca2c77b41fcd, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9097472358933953492, guid: b9bf28f62d3b3b94db78ca2c77b41fcd, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5220456326042466757, guid: b9bf28f62d3b3b94db78ca2c77b41fcd, type: 3}
