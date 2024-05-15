@@ -7,15 +7,15 @@ using UnityEngine.Audio;
 
 public class VolumeSlider : MonoBehaviour
 {
-    //я щрни упемэч мебнглнфмн пюанрюрэ!
+    
     
     
     public AudioMixer mixer;
     
     public Slider sfxSlider;
     public Slider musicSlider;
-
     
+
 
     void Start()
     {
