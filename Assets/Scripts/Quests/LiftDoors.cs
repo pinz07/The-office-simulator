@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using TMPro;
+using UnityEditor.UI;
 
 public class LiftDoors : MonoBehaviour
 {
@@ -12,11 +14,25 @@ public class LiftDoors : MonoBehaviour
     [SerializeField] private Transform RightDoorToPosOpen;
     [SerializeField] private Transform RightDoorToPosClose;
     [SerializeField] private float defaultTime = 5f;
+    [SerializeField] private TextMeshPro clock;
+    [SerializeField] private int time = 20;
 
     [SerializeField] private bool DoorState = false;
     void Start()
     {
-        DoorOpens();
+        InvokeRepeating("Time", 1f, 1f);
+        
+    }
+    public void Time()
+    {  
+        clock.text = time.ToString() + "";
+        if (time <= 0)
+        {
+            time += 1;
+            DoorOpens();  
+            InvokeRepeating("DoorClose", 10f, 10f);
+        }
+        time -= 1;
     }
 
     private void DoorOpens()
@@ -36,9 +52,6 @@ public class LiftDoors : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.H))
-        {
-            DoorClose();
-        }
+    
     }
 }
