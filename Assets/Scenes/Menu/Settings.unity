@@ -249,6 +249,18 @@ PrefabInstance:
       propertyPath: m_Colors.m_NormalColor.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 74540902564366329, guid: b9bf28f62d3b3b94db78ca2c77b41fcd, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.43529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 74540902564366329, guid: b9bf28f62d3b3b94db78ca2c77b41fcd, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.43529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 74540902564366329, guid: b9bf28f62d3b3b94db78ca2c77b41fcd, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.43529412
+      objectReference: {fileID: 0}
     - target: {fileID: 4620777657956697090, guid: b9bf28f62d3b3b94db78ca2c77b41fcd, type: 3}
       propertyPath: m_Pivot.x
       value: 0
