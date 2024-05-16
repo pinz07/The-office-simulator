@@ -16,8 +16,9 @@ public class LiftDoors : MonoBehaviour
     [SerializeField] private float defaultTime = 5f;
     [SerializeField] private TextMeshPro clock;
     [SerializeField] private int time = 20;
+    
 
-    [SerializeField] private bool DoorState = false;
+    [SerializeField] public bool DoorState = false;
     void Start()
     {
         InvokeRepeating("Time", 1f, 1f);
@@ -35,7 +36,7 @@ public class LiftDoors : MonoBehaviour
         time -= 1;
     }
 
-    private void DoorOpens()
+    public void DoorOpens()
     {
         LeftDoor.DOMove(LeftDoorToPosOpen.position, defaultTime);
         RightDoor.DOMove(RightDoorToPosOpen.position, defaultTime);
@@ -43,7 +44,7 @@ public class LiftDoors : MonoBehaviour
 
     }
 
-    private void DoorClose()
+    public void DoorClose()
     {
         LeftDoor.DOMove(LeftDoorToPosClose.position, defaultTime);
         RightDoor.DOMove(RightDoorToPosClose.position, defaultTime);
