@@ -1747,11 +1747,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1779465059989059987, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
   m_PrefabInstance: {fileID: 54932638}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2073084020 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 75317522919431512, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
-  m_PrefabInstance: {fileID: 3788213954355002169}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2720474144682872171
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1817,61 +1812,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1332519990650213180, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2605027105213143916, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
-      propertyPath: ButtonStartVirus
-      value: 
-      objectReference: {fileID: 2073084020}
-    - target: {fileID: 3065568627696945466, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3913872137038854966, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3913872137038854966, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: d2d14f87871e2be489aea0896bb48392, type: 3}
     - target: {fileID: 4155600851188025119, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 267500422}
-    - target: {fileID: 4204914414410473815, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4263185044646061523, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
       propertyPath: m_Name
       value: Worked Computer
-      objectReference: {fileID: 0}
-    - target: {fileID: 4861326497967265480, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5176741541859481973, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 45.9504
-      objectReference: {fileID: 0}
-    - target: {fileID: 5176741541859481973, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 43.213
-      objectReference: {fileID: 0}
-    - target: {fileID: 5176741541859481973, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0001
-      objectReference: {fileID: 0}
-    - target: {fileID: 5176741541859481973, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -515.2752
-      objectReference: {fileID: 0}
-    - target: {fileID: 5176741541859481973, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.1348
       objectReference: {fileID: 0}
     - target: {fileID: 5968313709851755746, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1913,42 +1860,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6109256564096038843, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6436284804279461686, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
       propertyPath: PlayerMovement
       value: 
       objectReference: {fileID: 1438217437}
-    - target: {fileID: 6766463158880397534, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
-      propertyPath: m_Colors.m_NormalColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6766463158880397534, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
-      propertyPath: m_Colors.m_NormalColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6766463158880397534, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
-      propertyPath: m_Colors.m_NormalColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7659501957327267990, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
-      propertyPath: m_Color.a
-      value: 0.59607846
-      objectReference: {fileID: 0}
-    - target: {fileID: 7659501957327267990, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
-      propertyPath: m_Color.b
-      value: 0.5471698
-      objectReference: {fileID: 0}
-    - target: {fileID: 7659501957327267990, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
-      propertyPath: m_Color.g
-      value: 0.36359322
-      objectReference: {fileID: 0}
-    - target: {fileID: 7659501957327267990, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
-      propertyPath: m_Color.r
-      value: 0.24003202
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

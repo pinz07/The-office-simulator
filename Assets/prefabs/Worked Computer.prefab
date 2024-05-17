@@ -1671,7 +1671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3207547, g: 0.3207547, b: 0.3207547, a: 0.59607846}
+  m_Color: {r: 0.24003202, g: 0.36359322, b: 0.5471698, a: 0.59607846}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1906,6 +1906,7 @@ MonoBehaviour:
   TMPVirus: {fileID: 7766777471696047633}
   Viruses: 0
   QuestComplete: 0
+  ButtonStartVirus: {fileID: 75317522919431512}
 --- !u!1 &1443815360225494685
 GameObject:
   m_ObjectHideFlags: 0
@@ -2486,7 +2487,7 @@ RectTransform:
   m_Father: {fileID: 3342096774578643811}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3207,7 +3208,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2294195559574182225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.000067817}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3216,8 +3217,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -446.8, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -515.2752, y: -0.1348}
+  m_SizeDelta: {x: 45.9504, y: 43.213}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1369872667035023566
 CanvasRenderer:
@@ -3247,8 +3248,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: d2d14f87871e2be489aea0896bb48392, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3300,7 +3301,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3913872137038854966}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6436284804279461686}
+        m_TargetAssemblyTypeName: EnterToPC, Assembly-CSharp
+        m_MethodName: PCStay
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2398198817726560478
 GameObject:
   m_ObjectHideFlags: 0
@@ -5546,7 +5559,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8802506365548027109
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5690,7 +5703,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4263185044646061523}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7271257, z: -0, w: 0.6865043}
+  m_LocalRotation: {x: 0, y: 0.72712606, z: 0, w: 0.686504}
   m_LocalPosition: {x: -13.114036, y: 1.336, z: -2.6059675}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

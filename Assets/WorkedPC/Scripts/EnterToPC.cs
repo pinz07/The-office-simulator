@@ -26,7 +26,7 @@ public class EnterToPC : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("In PC trigger");
-            if (Input.GetKeyUp(KeyCode.E) && PlayerCanUsePC)
+            if (Input.GetKeyUp(KeyCode.E) && PlayerCanUsePC)                
                 PCStay(PlayerInPC);
         }
     }
@@ -38,7 +38,7 @@ public class EnterToPC : MonoBehaviour
         else PlayerMovement.CanMove = true;
     }
 
-    private void PCStay(bool OnOff)
+    public void PCStay(bool OnOff)
     {
         bool State = false;
         if (OnOff) State = false;
