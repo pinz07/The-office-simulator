@@ -14,7 +14,8 @@ public class QuestsMain : MonoBehaviour
     [SerializeField] private bool StartLevel = false;
     [SerializeField] private bool LevelComplete = false;
     [SerializeField] private int QuestsCount = 4;
-    public int CurrentQuestsComplete = 0;
+    [SerializeField] private int CurrentQuestsComplete = 0;
+    public bool LevelIsCompleteCopy;
 
     void Start()
     {
@@ -25,6 +26,7 @@ public class QuestsMain : MonoBehaviour
 
     void Update()
     {
+        LevelIsCompleteCopy = LevelComplete;
         QuestsCompleteCheck();
     }
 
