@@ -16,12 +16,12 @@ public class Antivirus : MonoBehaviour
     private bool isCoroutineRunning = false;
     [SerializeField] public bool QuestComplete = false;
     [SerializeField] private GameObject ButtonStartVirus;
+    [SerializeField] private QuestsMain QuestsM;
+        
     void Start()
     {
         
     }
-
-
     void Update()
     {
         
@@ -71,6 +71,7 @@ public class Antivirus : MonoBehaviour
         int randomViruses = Random.Range(51, 123);
         Viruses = randomViruses;
         TMPVirus.SetText("Find  " + Viruses + " viruses files");
+        QuestsM.QuestComplete();
     }
 
     public void DeleteViruses()

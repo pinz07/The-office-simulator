@@ -16,11 +16,14 @@ public class QuestsMain : MonoBehaviour
     [SerializeField] private int QuestsCount = 4;
     [SerializeField] private int CurrentQuestsComplete = 0;
     public bool LevelIsCompleteCopy;
+    [SerializeField] private GameObject _LiftDoors;
+    [SerializeField] private GameObject _TriggerScene;
 
     void Start()
     {
         if (!StartLevel)
             StartingLevel();
+        _TriggerScene.SetActive(false);
     }
 
 
@@ -48,6 +51,7 @@ public class QuestsMain : MonoBehaviour
         {
             LevelEnding();
             LevelComplete = true;
+
         }
  
     }
@@ -57,7 +61,8 @@ public class QuestsMain : MonoBehaviour
         /*Logic for openElevator*/
         Debug.Log("All quests complete. Lifts Door opened. Player can leave the level.");
         //BUILD//
-        SceneManager.LoadScene(0);
+        Destroy(_LiftDoors);
+        _TriggerScene.SetActive(true);
         //BUILD//
     }
 }

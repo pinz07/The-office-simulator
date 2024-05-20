@@ -10,6 +10,7 @@ public class EnterToPC : MonoBehaviour
     [SerializeField] private AudioSource OnSFX;
     [SerializeField] private bool PlayerCanUsePC = true;
 
+
     void Start()
     {
 
