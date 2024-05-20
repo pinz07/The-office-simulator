@@ -16,6 +16,8 @@ public class QuestsGarbage : MonoBehaviour
     [SerializeField] private float Distance = 2f;
     [SerializeField] LayerMask interactLayer;
     [SerializeField] GameObject GarbageChute;
+    [SerializeField] private AudioSource trashUpSFX;
+    [SerializeField] private AudioSource trashSFX;
 
 
     private void Start()
@@ -33,7 +35,7 @@ public class QuestsGarbage : MonoBehaviour
 
     }
 
-    private void GetRewardForQuest()
+    /*private void GetRewardForQuest()
     {
         if (ThisQuestComplete && !RewardGet)
         {
@@ -41,6 +43,7 @@ public class QuestsGarbage : MonoBehaviour
             RewardGet = true;
         }
     }
+    */
 
     private void CollectTrash()
     {
@@ -59,6 +62,7 @@ public class QuestsGarbage : MonoBehaviour
                 Debug.Log("Press 'E' to interact");
                 if (Input.GetKeyDown(KeyCode.E))
                 {
+                    trashUpSFX.Play();
                     Destroy(hit.collider.gameObject);
                     CurrentGarbageCollect++;
                     GargabeCollectCheck();
@@ -71,7 +75,7 @@ public class QuestsGarbage : MonoBehaviour
     private void GargabeCollectCheck()
     {
         if (CurrentGarbageCollect == GarbageAmountNeed)
-            AllGarbageCollected = true;
+            AllGarbageCollected = true;    
     }
 
     private void CleanGarbage()
@@ -93,8 +97,10 @@ public class QuestsGarbage : MonoBehaviour
                 {
                     PS.PlayerDo = false;
                     ThisQuestComplete = true;
-                    GetRewardForQuest();
+                    QuestsM.QuestComplete();
                     Destroy(gameObject);
+                    trashSFX.Play();
+
                 }
             }
         }
