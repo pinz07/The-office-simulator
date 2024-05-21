@@ -18,6 +18,8 @@ public class QuestsGarbage : MonoBehaviour
     [SerializeField] GameObject GarbageChute;
     [SerializeField] private AudioSource trashUpSFX;
     [SerializeField] private AudioSource trashSFX;
+    [SerializeField] private GameObject FoodOff;
+    [SerializeField] private GameObject FoodOn;
 
 
     private void Start()
@@ -100,6 +102,8 @@ public class QuestsGarbage : MonoBehaviour
                     QuestsM.QuestComplete();
                     Destroy(gameObject);
                     trashSFX.Play();
+                    FoodOff.active = true;
+                    FoodOn.active = false;
 
                 }
             }

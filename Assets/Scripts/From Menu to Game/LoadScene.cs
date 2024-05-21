@@ -8,8 +8,13 @@ public class LoadScene : MonoBehaviour
     // Start is called before the first frame update
     public void NewGame()
     {
-        SceneManager.LoadScene(2); //Will be changed later
+        SceneManager.LoadScene(1); //Will be changed later
+    }
+    public void Start()
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
     }
 
-    
+
 }

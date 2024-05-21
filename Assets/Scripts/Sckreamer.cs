@@ -37,6 +37,8 @@ public class Sckreamer : MonoBehaviour
 
     public void SceneEnd()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(0);
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
     }
 }

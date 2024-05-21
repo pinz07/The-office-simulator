@@ -17,6 +17,9 @@ public class QuestsWaterThePlant : MonoBehaviour
     [SerializeField] private int WaterAmountNeed = 2;
     [SerializeField] private int CurrentWaterCollect = 0;
     [SerializeField] private bool AllWaterCollected = false;
+    [SerializeField] private GameObject FoodOff;
+    [SerializeField] private GameObject FoodOn;
+    [SerializeField] private AudioSource EatSFX;
 
     void Start()
     {
@@ -64,6 +67,9 @@ public class QuestsWaterThePlant : MonoBehaviour
                     Score++;
                     WaterCollectCheck();
                     //PlayerAudio.PickUpAudioPlay();
+                    EatSFX.Play();
+                    FoodOn.active = false;
+                    FoodOff.active = true;
                 }
             }
         }

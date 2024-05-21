@@ -9,6 +9,8 @@ public class QuestsComputer : MonoBehaviour
     [SerializeField] private QuestsMain QuestsM;
     [SerializeField] private bool RewardGet = false;
     [SerializeField] Antivirus AntivirusFunc;
+    [SerializeField] private GameObject FoodOff;
+    [SerializeField] private GameObject FoodOn;
     void Start()
     {
 
@@ -23,6 +25,8 @@ public class QuestsComputer : MonoBehaviour
             {
                 QuestsM.QuestComplete();
                 RewardGet = true;
+                FoodOff.active = true;
+                FoodOn.active = false;
             }
         }
     }
