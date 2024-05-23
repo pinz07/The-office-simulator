@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class HideAndSeek : MonoBehaviour
 {
-    public GameObject _triggerHideAndSeek;
-    public GameObject _errorHideAndSeek;   
+    [SerializeField] private GameObject _triggerHideAndSeek;
+    [SerializeField] private GameObject _errorHideAndSeek;   
     void Start()
     {
      _errorHideAndSeek.active = false;          

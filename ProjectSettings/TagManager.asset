@@ -7,6 +7,9 @@ TagManager:
   - Error
   - HS
   - Zone
+  - SWEP
+  - Garbage
+  - TriggerWaterCan
   layers:
   - Default
   - TransparentFX
