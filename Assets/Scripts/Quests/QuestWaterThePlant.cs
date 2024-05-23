@@ -62,7 +62,7 @@ public class QuestsWaterThePlant : MonoBehaviour
                 Debug.Log("Press 'E' to interact");
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    Destroy(hit.collider.gameObject);
+                    //(hit.collider.gameObject);
                     //Destroy(WaterCan);
                     Score++;
                     WaterCollectCheck();

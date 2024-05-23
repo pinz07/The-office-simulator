@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class Error : MonoBehaviour
 {
-    public GameObject error;
-    public GameObject triggerError;
+    [SerializeField] private GameObject error;
+    [SerializeField] private GameObject triggerError;
+    [SerializeField] private AudioSource AudioError;
 
 
     public void Start()
@@ -37,9 +38,14 @@ public class Error : MonoBehaviour
             GetComponentInChildren<Jump>().enabled = false;
             GetComponentInChildren<FirstPersonMovement>().enabled = false;
             GetComponentInChildren<FirstPersonLook>().enabled = false;
+            AudioError.Play();
  
 
         }
+    }
+    public void ErrorAud()
+    {
+        AudioError.Play();
     }
 }
 

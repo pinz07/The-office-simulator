@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class LogicManager : MonoBehaviour
 {
-    public GameObject Playerbuter;
-    public GameObject trig;
-    public GameObject DecorativeSandwich;
-    private int Score = 0;
+    [SerializeField] private GameObject Playerbuter;
+    [SerializeField] private GameObject trig;
+    [SerializeField] private GameObject DecorativeSandwich;
+    [SerializeField] private int Score = 0;
 
-    public GameObject PlayerWater;
-    public GameObject trigWater;
-    public GameObject DecorativeWater;
-    private int ScoreWater = 0;
+    [SerializeField] private GameObject PlayerWater;
+    [SerializeField] private GameObject trigWater;
+    [SerializeField] private GameObject DecorativeWater;
+    [SerializeField] private int ScoreWater = 0;
 
     private void Start()
     {

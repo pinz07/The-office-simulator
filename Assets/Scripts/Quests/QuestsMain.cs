@@ -18,6 +18,8 @@ public class QuestsMain : MonoBehaviour
     public bool LevelIsCompleteCopy;
     [SerializeField] private GameObject _LiftDoors;
     [SerializeField] private GameObject _TriggerScene;
+    [SerializeField] private GameObject LiftR;
+    [SerializeField] private GameObject LiftL;
 
     void Start()
     {
@@ -61,7 +63,10 @@ public class QuestsMain : MonoBehaviour
         /*Logic for openElevator*/
         Debug.Log("All quests complete. Lifts Door opened. Player can leave the level.");
         //BUILD//
-        Destroy(_LiftDoors);
+        //Destroy(_LiftDoors);
+
+        LiftR.active = false;
+        LiftL.active = false;
         _TriggerScene.SetActive(true);
         //BUILD//
     }

@@ -30,7 +30,7 @@ public class Sckreamer : MonoBehaviour
             player.GetComponentInChildren<Crouch>().enabled = false;
             player.GetComponentInChildren<Jump>().enabled = false;
             player.GetComponentInChildren<FirstPersonMovement>().enabled = false;
-            InvokeRepeating("SceneEnd", 1, 1);
+            InvokeRepeating("SceneEnd", 3, 3);
 
         }
     } 

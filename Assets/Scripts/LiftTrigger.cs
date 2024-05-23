@@ -6,12 +6,7 @@ public class LiftTrigger : MonoBehaviour
 {
     [SerializeField] private QuestsMain QuestM;
     [SerializeField] private LiftDoors LiftScript;
-    [SerializeField] private bool StateLift = false;
-    void Start()
-    {
-
-    }
-
+    [SerializeField] private bool StateLift = true;
 
     private void OnTriggerStay(Collider other)
     {
@@ -23,11 +18,4 @@ public class LiftTrigger : MonoBehaviour
     }
 
 
-    void Update()
-    {
-     if(StateLift = false)
-        {
-            LiftScript.DoorOpens();
-        }
-    }
 }

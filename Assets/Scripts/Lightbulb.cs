@@ -4,9 +4,9 @@ using System.Collections;
 public class Lightbulb : MonoBehaviour
 {
 
-    public float constantIntens;
-    public float inten;
-    private float TimeDown;
+    [SerializeField] private float constantIntens;
+    [SerializeField] private float inten;
+    [SerializeField] float TimeDown;
 
     // Use this for initialization
     void Start()
