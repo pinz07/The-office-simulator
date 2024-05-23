@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using TMPro;
-using UnityEditor.UI;
 
 public class LiftDoors : MonoBehaviour
 {

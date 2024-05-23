@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.41241565, g: 0.4997614, b: 0.51130927, a: 1}
+  m_IndirectSpecularColor: {r: 0.41241577, g: 0.49976206, b: 0.51130974, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -31688,6 +31688,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2080917114}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1574293750 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2605027105213143916, guid: 079b7682d87ef8742be9130f2c40e2f6, type: 3}
+  m_PrefabInstance: {fileID: 75394487}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d219765fa5adc7d4aa53e29b75b921ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1581833356
 GameObject:
   m_ObjectHideFlags: 0
@@ -41711,7 +41722,7 @@ PrefabInstance:
     - target: {fileID: 6931136555480960110, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: AntivirusFunc
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1574293750}
     - target: {fileID: 7059883916730255952, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: m_IsActive
       value: 1
